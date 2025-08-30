@@ -22,7 +22,7 @@ jobs:
 
   build-and-lint:
     runs-on: ubuntu-latest
-    needs: reject-invalid-pr-source  # 이전 검사 통과해야 실행됨
+    needs: reject-invalid-pr-source
 
     steps:
       - name: Checkout repository
