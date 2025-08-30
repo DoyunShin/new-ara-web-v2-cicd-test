@@ -5,16 +5,14 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://newara.dev.sparcs.org/api/:path*", // Django dev 서버 주소
+        destination: "https://newara.sparcs.org/api/:path*", // Django dev 서버 주소
       },
     ];
   },
   images: {
-    domains: ['sparcs-newara-dev.s3.amazonaws.com',
+    domains: [
       'sparcs-newara.s3.amazonaws.com',
-      'newara.dev.sparcs.org',
       'newara.sparcs.org',
-      'newara-front.dev.sparcs.org'
     ],
     unoptimized: true,// newara-front.dev는 로컬 개발용
   },
